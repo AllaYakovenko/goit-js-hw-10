@@ -18,3 +18,23 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.one-country__list,
+.countries-list__item{
+  list-style: none;
+}
+
+.one-country__item{
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.one-country__item--name{
+  text-decoration: underline;
+  font-size: 18px;
+}
+.countries-list__name{
+  text-transform: uppercase;
+  
+}
