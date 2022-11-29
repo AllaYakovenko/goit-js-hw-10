@@ -19,14 +19,21 @@ body {
   margin-bottom: 16px;
 }
 
-.one-country__list,
-.countries-list__item{
+.one-country__list{
   list-style: none;
 }
 
+.countries-list__item{
+  list-style: none;
+  display: flex;
+}
+
+.countries-list__flag{
+  margin-right: 5px;
+}
 .one-country__item{
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -36,5 +43,5 @@ body {
 }
 .countries-list__name{
   text-transform: uppercase;
-  
+
 }

@@ -47,7 +47,7 @@ function countryList(countries) {
 function oneCountry(country) { 
     const markup = country
         .map(({ flags, name, capital, population, languages }) => {
-            return `<img src='${flags.svg}' alt='${name.official} flag' width="200px" height="100px"/>
+            return `<img src="${flags.svg}" alt="${name.official} flag" width="200px" height="100px"/>
                     <ul class="one-country__list">
                         <li class="one-country__item one-country__item--name">
                             <p>Name: ${name.official}</p></li>
@@ -66,7 +66,7 @@ function manyCountries(countries) {
     const markup = countries
         .map(({ flags, name }) => {
             return `<li class="countries-list__item">
-                        <img src="${flags.svg}" alt="Flag of ${name.official}" width = "200px" height = "100px" />
+                        <img class="countries-list__flag" src="${flags.svg}" alt="Flag of ${name.official}" width = "50px" height = "50px" />
                             <p class="countries-list__name">${name.official}</p>
                     </li>`;
         }).join('');
